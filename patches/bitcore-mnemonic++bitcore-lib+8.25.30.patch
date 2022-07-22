@@ -1,0 +1,12 @@
+diff --git a/node_modules/bitcore-mnemonic/node_modules/bitcore-lib/index.js b/node_modules/bitcore-mnemonic/node_modules/bitcore-lib/index.js
+index 4cbe6bf..d28f29b 100644
+--- a/node_modules/bitcore-mnemonic/node_modules/bitcore-lib/index.js
++++ b/node_modules/bitcore-mnemonic/node_modules/bitcore-lib/index.js
+@@ -9,7 +9,6 @@ bitcore.versionGuard = function(version) {
+     var message = 'More than one instance of bitcore-lib found. ' +
+       'Please make sure to require bitcore-lib and check that submodules do' +
+       ' not also include their own bitcore-lib dependency.';
+-    throw new Error(message);
+   }
+ };
+ bitcore.versionGuard(global._bitcore);

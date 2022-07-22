@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  scraper:
+    restart: always
+    build: .
+    env_file: ./.env
+    volumes:
+      - ./wallets-eth:/usr/src/app/wallets-eth
+      - ./wallets-trx:/usr/src/app/wallets-trx
